@@ -4,30 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5edf84c-7d0d-4c36-844e-8110f17018df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mod2/task1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod2/task2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod2/task3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod2/task4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod2/task5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod2/task6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod2/task7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod2/task8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod2/task9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod3/task1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod3/task2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod3/task3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod3/task4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod3/task5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod3/task6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod3/task7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod4/task1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod4/task2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod4/task3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mod4/task4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a5edf84c-7d0d-4c36-844e-8110f17018df" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/mod1/Лабораторная_№1_Парубов_Д_Е_РИЗ_220916у.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +22,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ParubovDaniil"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ParubovDaniil&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -83,15 +63,25 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Parub/PycharmProjects/pythonProject1/mod4",
+    "last_opened_file_path": "C:/Users/Parub/PycharmProjects/pythonProject1/mod1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Parub\PycharmProjects\pythonProject1\mod5" />
+      <recent name="C:\Users\Parub\PycharmProjects\pythonProject1\mod1" />
+      <recent name="C:\Users\Parub\PycharmProjects\pythonProject1\mod4" />
+      <recent name="C:\Users\Parub\PycharmProjects\pythonProject1\mod3" />
+      <recent name="C:\Users\Parub\PycharmProjects\pythonProject1\mod2" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject1" />
@@ -138,8 +128,19 @@
       <workItem from="1708436172328" duration="2445000" />
       <workItem from="1708678588453" duration="3000" />
       <workItem from="1709565899763" duration="2000" />
-      <workItem from="1709655468679" duration="719000" />
+      <workItem from="1709655468679" duration="1553000" />
+      <workItem from="1709880421680" duration="3000" />
+      <workItem from="1710054670468" duration="1097000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1709656413762</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709656413762</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +156,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
