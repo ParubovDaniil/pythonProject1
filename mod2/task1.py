@@ -1,6 +1,9 @@
-a = 10
-b = 16
+# //Найдите остаток при делении числа a на b.
+# Формат ввода
+# 123, 12
+# Формат вывода
+# 3
 
-remainder = a % b
-
-print(remainder)
+a = int(input())
+b = int(input())
+print (a%b)

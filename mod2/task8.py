@@ -1,23 +1,23 @@
-words = input()
+# Дан список слов. Составить из последних букв каждого слова новое.
+# Формат ввода
+# кот гири док
+# Формат вывода
+# тик
 
-current_word = ''
-current_char = ''
-result = ''
-is_space = False
 
-for char in words:
-    if char != ' ':
-        current_char = char
-        is_space = False
+user_input = input("Введите слова через пробел: ")
+
+
+last_letters = ""
+current_word = ""
+
+for char in user_input:
+    if char != " ":
+        current_word += char
     else:
-        is_space = True
+        last_letters +=current_word[-1]
+        current_word = ""
 
-    if is_space:
-        result += current_word[-1]
-        current_word = ''
-    else:
-        current_word += current_char
+last_letters += current_word[-1]
 
-result += current_word[-1]
-
-print(result)
+print(last_letters)

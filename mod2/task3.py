@@ -1,27 +1,70 @@
-# Считываем три целых числа
-input_str = input().strip()
+user_input = input("Введите три целых числа a, b, c через пробел: ")
 
-# Ищем первое число
-first_space_index = input_str.index(' ')
-a = int(input_str[:first_space_index])
+# Извлекаем числа из строки
+a = ''
+b = ''
+c = ''
+number = ''
+number_index = 0
 
-# Обрезаем строку передвигаясь на один символ за первым числом
-rest_str = input_str[first_space_index + 1:]
+for char in user_input:
+    if char != ' ':
+        number += char
+    else:
+        if number_index == 0:
+            a = int(number)
+        elif number_index == 1:
+            b = int(number)
+        elif number_index == 2:
+            c = int(number)
+        number_index += 1
+        number = ''
 
-# Ищем второе число
-second_space_index = rest_str.index(' ')
-b = int(rest_str[:second_space_index])
-
-# Третье число - все оставшееся
-c = int(rest_str[second_space_index + 1:])
-
-# Определяем число, стоящее посередине
-middle_number = a
-if (b <= a <= c) or (c <= a <= b):
-    middle_number = a
-elif (a <= b <= c) or (c <= b <= a):
-    middle_number = b
+# Обработка последнего числа
+if number_index == 2:
+    c = int(number)
 else:
-    middle_number = c
+    b = int(number)
 
-print(middle_number)
+# Проверка условий ввода
+while a < -1000 or c > 1000:
+    print("Число A должно быть больше или равно -1000, а число C должно быть меньше или равно 1000. Попробуйте снова.")
+    user_input = input("Введите три целых числа a, b, c через пробел: ")
+
+    a = ''
+    b = ''
+    c = ''
+    number = ''
+    number_index = 0
+
+    for char in user_input:
+        if char != ' ':
+            number += char
+        else:
+            if number_index == 0:
+                a = int(number)
+            elif number_index == 1:
+                b = int(number)
+            elif number_index == 2:
+                c = int(number)
+            number_index += 1
+            number = ''
+
+    # Обработка последнего числа
+    if number_index == 2:
+        c = int(number)
+    else:
+        b = int(number)
+
+# Упорядочивание чисел
+if a > b:
+    a, b = b, a
+if a > c:
+    a, c = c, a
+if b > c:
+    b, c = c, b
+
+# Находим число, которое будет стоять между двумя другими
+middle_number = b
+
+print("Число, стоящее между числами a и c:", middle_number)

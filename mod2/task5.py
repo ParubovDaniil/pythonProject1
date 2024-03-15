@@ -1,32 +1,33 @@
-# Ввод доменного имени
-domain = input("Введите доменное имя: ")
+# На вход подается доменное имя сайта. Необходимо вывести все домены по порядку
+# начиная с домена первого уровня.
+# Формат ввода
+# www.google.com
+# Формат вывода
+# com
+# google
+# www
 
-# Инициализация переменных для домена и доменного расширения
-domain_name = ""
-extension = ""
+user_input = (input("Enter a: "))
 
-# Поиск доменного расширения
-i = len(domain) - 1
-while domain[i] != '.':
-    extension = domain[i] + extension
-    i -= 1
 
-# Поиск первой части домена
-j = i - 1
-while j >= 0 and domain[j] != '.':
-    domain_name = domain[j] + domain_name
-    j -= 1
-
-# Поиск поддомена, если есть
 subdomain = ""
-if j > 0:
-    k = j - 1
-    while k >= 0 and domain[k] != '.':
-        subdomain = domain[k] + subdomain
-        k -= 1
+main_domains = ""
+top_level_domain = ""
 
-# Вывод домена и доменного расширения
-print(extension)
-print(domain_name)
-if subdomain:
-    print(subdomain)
+dot_count = 0
+for char in user_input:
+    if char == '.':
+        dot_count +=1
+
+    elif dot_count == 1:
+        main_domains += char
+
+    elif dot_count == 2:
+        top_level_domain += char
+
+    else:
+        subdomain += char
+
+print(top_level_domain)
+print(main_domains)
+print(subdomain)

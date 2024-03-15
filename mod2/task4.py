@@ -1,50 +1,50 @@
-def to_binary(n):
-    if n <= 0:
-        return '0'
+# Для введенного в десятичном коде натурального числа найти представление в двоичном,
+# восьмеричном и шестнадцатеричном кодах. Если введено не натуральное число, вывести
+# диагностику: «Неверный ввод». Использовать встроенные возможности языка python
+# запрещено.
+# Формат ввода
+# 100
+# Формат вывода
+# 1100100, 144, 64
 
-    binary = ''
-    while n > 0:
-        binary = str(n % 2) + binary
-        n //= 2
-    return binary
+user_input = input ("Введите натуральное десятичное число: ")
+number = int(user_input)
+while number < 0:
+    print("Введенное число не натурнольное. Введите еще раз")
+    user_input = input("Введите натуральное десятичное число: ")
+    number = int(user_input)
 
+binary = ""
+octal = ""
+hexadecimal = ""
 
-def to_octal(n):
-    if n <= 0:
-        return '0'
-
-    octal = ''
-    while n > 0:
-        octal = str(n % 8) + octal
-        n //= 8
-    return octal
-
-
-def to_hexadecimal(n):
-    if n <= 0:
-        return '0'
-
-    hexadecimal = ''
-    while n > 0:
-        remainder = n % 16
-        if remainder < 10:
-            hexadecimal = str(remainder) + hexadecimal
-        else:
-            hexadecimal = chr(remainder - 10 + ord('A')) + hexadecimal
-        n //= 16
-    return hexadecimal
+numforbinary = number
+numforoctal = number
+numforhexadecimal = number
 
 
-# Ввод числа
-num_str = input()
-try:
-    num = int(num_str)
-    if num <= 0:
-        print('Неверный ввод')
+
+while numforbinary > 0:
+    binary = str(numforbinary % 2) + binary
+    numforbinary = numforbinary // 2
+
+
+while numforoctal > 0:
+    octal = str(numforoctal % 8) + octal
+    numforoctal = numforoctal // 8
+
+
+# здесь используется функция ord, которая возвращает числовое представление символа ASCII, переданного в качестве аргумента.
+# В данном случае мы берем ASCII-код символа 'A' (который равен 65) и добавляем к нему остаток от деления remainder, вычитая 10.
+# Это преобразует остаток в числовое значение символа в диапазоне от 10 до 15. Затем функция chr преобразует числовое значение обратно в символ ASCII.
+
+while numforhexadecimal > 0:
+    remainder = numforhexadecimal % 16
+    if remainder < 10:
+        hexadecimal = str(remainder) + hexadecimal
     else:
-        binary = to_binary(num)
-        octal = to_octal(num)
-        hexadecimal = to_hexadecimal(num)
-        print(binary + ', ' + octal + ', ' + hexadecimal)
-except ValueError:
-    print('Неверный ввод')
+        hexadecimal = chr(ord('A') + remainder - 10) + hexadecimal
+    numforhexadecimal = numforhexadecimal // 16
+
+
+print(f"{binary}, {octal}, {hexadecimal}")

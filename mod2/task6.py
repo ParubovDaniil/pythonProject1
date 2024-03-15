@@ -1,15 +1,24 @@
-input_string = input("Введите строку из символов '0' и '1': ")
+# Строка состоит из 0 и 1 Выведите ‘yes’, если количество единиц совпадает с
+# количеством нулей. И ‘no’ в противном случае.
+# Пример 1
+# Ввод
+# 01011111101100111101
+# Вывод
+# no
 
-zeros = 0
-ones = 0
+user_input = input("Введите двоичное число: ")
 
-for char in input_string:
-    if char == '0':
-        zeros += 1
-    elif char == '1':
-        ones += 1
+num = ""
+counter_of_units = 0
+zero_counter = 0
 
-if zeros == ones:
-    print('yes')
+for char in user_input:
+    if char == '1':
+        counter_of_units = int (counter_of_units + 1)
+    else:
+        zero_counter += 1
+
+if counter_of_units == zero_counter:
+    print("yes")
 else:
-    print('no')
+    print("no")

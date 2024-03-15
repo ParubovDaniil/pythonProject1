@@ -1,22 +1,18 @@
-input_data = input()
+# На вход подается строка s и символ i. Необходимо найти количество символов i,
+# расположенных в начале строки.
+# Формат ввода
+# xyxxyx,x
+# Формат вывода
+# 1
 
-s = ""
-i = ""
-comma_found = False
+s = input("Введите строку s: ")
+i = input("Введите символ i: ")
 
-for char in input_data:
-    if char == ',':
-        comma_found = True
-    elif comma_found:
-        i += char
+count = 0
+for char in s:
+    if char == i:
+        count += 1
     else:
-        s += char
+        break  # Прерываем цикл при первом символе, отличном от i
 
-index = 0
-result = 0
-
-while index < len(s) and s[index:] == i + s[index + len(i):]:
-    result += 1
-    index += len(i)
-
-print(result)
+print(count)
